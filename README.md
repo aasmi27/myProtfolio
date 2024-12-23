@@ -1,2 +1,2 @@
-# myProtfolio
-My React JS project related to my portfolio
+# Getting Started with Create React App
+
