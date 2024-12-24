@@ -4,8 +4,6 @@ import {
   Card,
   Group,
   Image,
-  Indicator,
-  Text,
   useMatches,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";

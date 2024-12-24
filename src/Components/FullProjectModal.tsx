@@ -1,12 +1,9 @@
 import {
   Badge,
   Button,
-  Group,
-  Image,
   Indicator,
   Modal,
   ScrollArea,
-  Text,
   useMatches,
 } from "@mantine/core";
 
