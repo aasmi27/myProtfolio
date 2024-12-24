@@ -7,6 +7,7 @@ const Footer = () => {
         key={index}
         href={`${socialLink.link}`}
         target="_blank"
+        rel="noreferrer"
         className="font-mono text-lg  hover:text-primaryColor hover:scale-105 transition transform duration-300 ease-in-out"
       >
         <socialLink.icon stroke={1.5} size={25} />

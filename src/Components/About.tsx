@@ -1,11 +1,10 @@
 import { Info } from "../User";
 import Typewriter from "typewriter-effect";
-import {  useMatches } from "@mantine/core";
 import ResumeViewer from "./ResumeViewer";
 import { useDisclosure } from "@mantine/hooks";
 import Particles from "./magicui/Particles";
 const About = () => {
-  const [opened, { open, close }] = useDisclosure(false);
+  const [opened, {  close }] = useDisclosure(false);
 
   return (
     <>

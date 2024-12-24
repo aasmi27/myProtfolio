@@ -1,14 +1,15 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
 
-interface MousePosition {
+interface MousePositions {
   x: number;
   y: number;
 }
 
-function MousePosition(): MousePosition {
-  const [mousePosition, setMousePosition] = useState<MousePosition>({
+function MousePosition(): MousePositions {
+  const [mousePosition, setMousePosition] = useState<MousePositions>({
     x: 0,
     y: 0,
   });
