@@ -28,14 +28,11 @@ jobs:
     - name: Build project
       run: npm run build
 
-    # Step 5: Configure Git (Fix the author identity issue)
-    - name: Set Git identity
-      run: |
-        git config --global user.name "aasmi27"
-        git config --global user.email "aasmi2127@gmail.com"
-
-    # Step 6: Deploy to GitHub Pages
+    # Step 5: Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: npm run deploy
+      run: |
+        git config --global user.name "aasmi27"
+        git config --global user.email "aasmi2127@gmail.com"
+        npx gh-pages -d build -r "https://${{ secrets.GITHUB_TOKEN }}@github.com/aasmi27/myPortfolio.git"
