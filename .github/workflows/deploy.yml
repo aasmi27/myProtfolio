@@ -18,7 +18,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18 # Use your project's Node.js version
+        node-version: 21.4.0 # Use your project's Node.js version
 
     # Step 3: Install dependencies
     - name: Install dependencies
