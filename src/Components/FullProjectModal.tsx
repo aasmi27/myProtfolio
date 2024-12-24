@@ -5,6 +5,7 @@ import {
   Modal,
   ScrollArea,
   useMatches,
+  Image
 } from "@mantine/core";
 
 const FullProjectModal = (props: any) => {
